@@ -9,6 +9,9 @@
         <title>lv</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width">
+	<!-- CSS Global Compulsory-->
+	<link rel="stylesheet" href="styles/header.css">
+
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
         <!-- build:css styles/vendor.css -->
         <!-- bower:css -->
@@ -24,24 +27,86 @@
         <!--[if lt IE 10]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
+	<!--=== Top ===-->
+	<div class="top">
+	    <div class="container">         
+		<ul class="loginbar pull-right">
+		    <li>
+			<i class="icon-globe"></i>
+		    </li>
+		    <li class="devider"></li>   
+		    <li><a href="#">Help</a></li>  
+		    <li class="devider"></li>   
+		    <li><a href="#">Login</a></li>   
+		</ul>
+	    </div>      
+	</div>
+	<!--=== END Top ===-->
+	<!--=== Header===-->
+<div class="header">
+    <div class="navbar navbar-default" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">
+                    <img id="logo-header" src="./assets/img/logo1-default.png" alt="Logo">
+                </a>
+            </div>
 
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-responsive-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="dropdown ">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="0" data-close-others="false">
+                            Home
+                            <i class="icon-angle-down"></i>
+                        </a>
+                    </li>
+                    <li class="active">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="0" data-close-others="false">
+                            Pages
+                            <i class="icon-angle-down"></i>
+                        </a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="0" data-close-others="false">
+                            Features
+                            <i class="icon-angle-down"></i>
+                        </a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="0" data-close-others="false">
+                            Portfolio
+                            <i class="icon-angle-down"></i>
+                        </a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="0" data-close-others="false">
+                            Blog
+                            <i class="icon-angle-down"></i>
+                        </a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="0" data-close-others="false">
+                            Contacts
+                            <i class="icon-angle-down"></i>
+                        </a>
+                    </li>                    
+                    <li class="hidden-sm"><a class="search"><i class="icon-search search-btn"></i></a></li>
+                </ul>
+            </div><!-- /navbar-collapse -->
+        </div>    
+    </div>    
+</div>
+	<!--=== END Header ===-->
 
         <div class="container">
-            <div class="header">
-                <ul class="nav nav-pills pull-right">
-                    <li class="active"><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-                <h3 class="text-muted">lv</h3>
-            </div>
-
-            <div class="jumbotron">
-                <h1>'Allo, 'Allo!</h1>
-                <p class="lead">Always a pleasure scaffolding your apps.</p>
-                <p><a class="btn btn-lg btn-success" href="#">Splendid!</a></p>
-            </div>
-
             <div class="row marketing">
                 <div class="col-lg-6">
                     <h4>HTML5 Boilerplate</h4>
