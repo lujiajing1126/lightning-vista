@@ -24,6 +24,5 @@ grunt server
 
 # Dev Dependency
 
-> AngularJS
-
-> Angular-UI
+> Yeoman/Bower/Grunt
+> Compass/Sass/BootStrap-Sass
