@@ -1,7 +1,22 @@
 $icon-font-path: "/bower_components/sass-bootstrap/fonts/";
+$default-transition-duration: 0.3s;
+$default-transition-property : all;
+$default-transition-function : false;
+$default-transition-delay    : 0s;
+
+@import 'compass/css3';
 
 @import 'sass-bootstrap/lib/bootstrap';
 
+@font-face {
+    font-family: Kristi;
+    src: url(http://wp-themes.com/wp-content/themes/alhena-lite/font/Kristi.woff);
+}
+
+@font-face {
+    font-family: Abel;
+    src: url(http://wp-themes.com/wp-content/themes/alhena-lite/font/Abel.woff);
+}
 .browsehappy {
     margin: 0.2em 0;
     background: #ccc;
@@ -11,8 +26,48 @@ $icon-font-path: "/bower_components/sass-bootstrap/fonts/";
 
 /* Space out content a bit */
 body {
-    padding-top: 20px;
+    padding-top: 0px;
     padding-bottom: 20px;
+}
+
+/* header navbar */
+a#navbar-brand-custom {
+    font-family: 'Kristi',Verdana, Geneva, sans-serif;
+    font-size: 45px;
+    color: #ffffff;
+    line-height: 1em;
+    &:hover {
+        color: #919191;
+    }
+    @include transition-duration($default-transition-duration);
+    @include transition-timing-function(ease);
+}
+
+nav.navbar-custom {
+    background-color: #333;
+    height: 85px;
+    font-family: 'Abel',Verdana, Geneva, sans-serif;
+    font-size: 20px;
+    color: #919191;
+    a.navbar-button-custom {
+        color: #919191;
+        &:hover {
+            color: #fff;
+        }
+        @include transition-timing-function(linear);
+        @include transition-duration($default-transition-duration);
+    }
+}
+
+div.navbar-logo {
+    position: relative;
+    left: 80px;
+}
+
+ul.navbar-right-custom {
+    position: relative;
+    right: 80px;
+    top: 17px;
 }
 
 /* Everything but the jumbotron gets side spacing for mobile first views */
