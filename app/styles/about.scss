@@ -63,7 +63,7 @@ body {
 }
 
 /* Responsive: Portrait tablets and up */
-@media screen and (min-width: 768px) {
+@media (min-width: $screen-sm-min) {
     /* header navbar */
     a#navbar-brand-custom {
         font-family: 'Kristi',Verdana, Geneva, sans-serif;
@@ -93,6 +93,12 @@ body {
         }
     }
 
+    ul.navbar-right-custom {
+        position: relative;
+        right: 80px;
+        top: 17px;
+    }
+
     div.navbar-logo {
         position: relative;
         left: 80px;
@@ -111,14 +117,38 @@ body {
     #carousel-example-generic {
         margin-bottom: 30px;
     }
-
+    
+    /* Footer Part */
     .footer {
-        margin-top: 30px;
+        font-size: 12px;
+        margin-top: 50px;
+        padding-top: 40px;
     }
 
-    ul.navbar-right-custom {
-        position: relative;
-        right: 80px;
-        top: 17px;
+    div#footer-left {
+        padding-top: 6px;
+    }
+
+    div#footer-right {
+        padding-top: 6px;
+    }
+    
+    a#copyright {
+        text-decoration: none;
+        margin-right: 10px;
+    }
+
+    a.footer-left-link {
+        text-decoration: none;
+        margin-right: 5px;
+    }
+
+    a.footer-right-link {
+        text-decoration: none;
+        margin-left: 5px;
+    }
+
+    div#footer-logo {
+        padding-left: 40px;
     }
 }
