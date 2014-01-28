@@ -5,7 +5,8 @@
     "sass-bootstrap": "~3.0.0",
     "modernizr": "~2.6.2",
     "jquery": "~1.10.2",
-    "holderjs": "~2.3.0"
+    "holderjs": "~2.3.0",
+    "artTemplate": "git://github.com/aui/artTemplate"
   },
   "devDependencies": {}
 }
