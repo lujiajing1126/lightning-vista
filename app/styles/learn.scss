@@ -1,0 +1,150 @@
+$icon-font-path: "/bower_components/sass-bootstrap/fonts/";
+$default-transition-duration: 0.3s;
+$default-transition-property : all;
+$default-transition-function : false;
+$default-transition-delay    : 0s;
+
+@import 'compass/css3';
+
+@import 'sass-bootstrap/lib/bootstrap';
+
+@font-face {
+    font-family: Kristi;
+    src: url(http://wp-themes.com/wp-content/themes/alhena-lite/font/Kristi.woff);
+}
+
+@font-face {
+    font-family: Abel;
+    src: url(http://wp-themes.com/wp-content/themes/alhena-lite/font/Abel.woff);
+}
+.browsehappy {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* Space out content a bit */
+body {
+    padding-top: 0px;
+    padding-bottom: 20px;
+}
+
+/* Everything but the jumbotron gets side spacing for mobile first views */
+.header,
+.marketing,
+.footer {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Custom page header */
+.header {
+    /* Make the masthead heading the same height as the navigation */
+    h3 {
+        margin-top: 0;
+        margin-bottom: 0;
+        line-height: 40px;
+        padding-bottom: 19px;
+    }
+}
+
+/* Custom page footer */
+.footer {
+    padding-top: 19px;
+    color: #777;
+    border-top: 1px solid #e5e5e5;
+}
+
+/* jumbotron */
+.jumbotron {
+    margin-top: 0;
+    background-image: linear-gradient(45deg, #020031, #6D3353);
+    color: #fff;
+}
+
+/* Responsive: Portrait tablets and up */
+@media (min-width: $screen-sm-min) {
+    /* header navbar */
+    a#navbar-brand-custom {
+        font-family: 'Kristi',Verdana, Geneva, sans-serif;
+        font-size: 45px;
+        color: #ffffff;
+        line-height: 1em;
+        &:hover {
+            color: #919191;
+        }
+        @include transition-duration($default-transition-duration);
+        @include transition-timing-function(ease);
+    }
+
+    nav.navbar-custom {
+        background-color: #333;
+        height: 85px;
+        margin-bottom: 0;
+        font-family: 'Abel',Verdana, Geneva, sans-serif;
+        font-size: 20px;
+        color: #919191;
+        a.navbar-button-custom {
+            color: #919191;
+            &:hover {
+                color: #fff;
+            }
+            @include transition-timing-function(linear);
+            @include transition-duration($default-transition-duration);
+        }
+    }
+
+    ul.navbar-right-custom {
+        position: relative;
+        right: 80px;
+        top: 17px;
+    }
+
+    div.navbar-logo {
+        position: relative;
+        left: 80px;
+    }
+
+    /* Remove the padding we set earlier */
+    .header,
+    .marketing,
+    .footer {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    /* Footer Part */
+    .footer {
+        font-size: 12px;
+        margin-top: 50px;
+        padding-top: 40px;
+    }
+
+    div#footer-left {
+        padding-top: 6px;
+    }
+
+    div#footer-right {
+        padding-top: 6px;
+    }
+    
+    a#copyright {
+        text-decoration: none;
+        margin-right: 10px;
+    }
+
+    a.footer-left-link {
+        text-decoration: none;
+        margin-right: 5px;
+    }
+
+    a.footer-right-link {
+        text-decoration: none;
+        margin-left: 5px;
+    }
+
+    div#footer-logo {
+        padding-left: 40px;
+    }
+}
