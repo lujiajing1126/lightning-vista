@@ -1,3 +1,3 @@
 tpl: app/tpl/package.json
-	./compiletpl
+	./bin/compiletpl
 .PHONY: tpl
