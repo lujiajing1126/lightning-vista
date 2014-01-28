@@ -1,1 +1,5 @@
-console.log('\'Allo \'Allo!');
+$(function(){
+	'use strict';
+	$("#loading").hide();
+	$("body").prepend(template.render('index'));
+});
