@@ -1,0 +1,32 @@
+<!-- header -->
+{{include './public/header'}}
+<!-- container -->
+<div class="container">
+    <div class="row">
+        <div class="col-sm-3">
+            <!-- Nav tabs -->
+            <ul class="nav nav-pills nav-stacked">
+                <li class="active"><a href="#aboutus" data-toggle="tab">关于我们</a></li>
+                <li><a href="#bbb" data-toggle="tab">所获荣誉</a></li>
+                <li><a href="#ccc" data-toggle="tab">其他balabala</a></li>
+            </ul>
+        </div>
+        <div class="col-sm-9">
+            <!-- Tab panes -->
+            <div class="tab-content">
+                <div class="tab-pane fade in active" id="aboutus">
+                    <ol class="breadcrumb">
+                        <li><a href="#">Home</a></li>
+                        <li class="active">About Us</li>
+                    </ol>
+                    光维特公司介绍  
+                </div>
+                <div class="tab-pane fade" id="bbb">bbb content</div>
+                <div class="tab-pane fade" id="ccc">ccc content</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- the footer -->
+    {{include './public/footer'}}
+</div>
