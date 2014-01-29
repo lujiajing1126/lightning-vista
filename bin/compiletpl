@@ -1,0 +1,5 @@
+#!/bin/bash -e
+cd ./app/tpl/
+if [ -e package.json ]; then
+	tmod --watch-off
+fi
